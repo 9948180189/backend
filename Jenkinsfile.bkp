@@ -22,13 +22,7 @@ pipeline {
                     echo "App version: ${appVersion}"
                 }
             }
-        }
-        stage('Test') {
-           steps {
-           sh 'echo This is test'
-           sh 'env'
-           }
-        }
+        }        
 
         stage('Install Dependencies') {
             steps {
